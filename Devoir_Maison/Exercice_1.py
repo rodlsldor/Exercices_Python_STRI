@@ -1,11 +1,6 @@
 nbre = int(input("Entrez un nombre quelconque supérieur à 1.\n"))
 
 
-#----------------Somme Diviseurs--------------#
-def somDiv(nombre):
-    somDiviseur = 0
-    return somDiviseur
-
 #----------------Nombre Parfait----------------#
 
 
@@ -31,11 +26,22 @@ def estPremier(nombre):
 
 
 def estChanceux(nombre):
+        for i
     return True
 
 #----------------Diviseur Propre-------------#
 
 
 def divPropre(nombre):
+    liste = []
+    for i in nombre:
+        if (nombre % i == 0):
+            liste.append(i)
+    return liste
 
-    return True
+#----------------Somme Diviseurs--------------#
+def somDiv(nombre):
+    somDiviseur = 0
+    for i in range(divPropre(nombre)-1):
+        somDiviseur += divPropre(nombre)[i]
+    return somDiviseur
