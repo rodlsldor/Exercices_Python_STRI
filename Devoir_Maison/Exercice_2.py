@@ -17,4 +17,4 @@ def occAdn():
     return chaine.count(sschaine)
 
 
-print(occAdn())
+print("Nombre d'occurence : ", occAdn())
