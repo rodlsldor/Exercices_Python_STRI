@@ -26,7 +26,9 @@ def estPremier(nombre):
 
 
 def estChanceux(nombre):
-        for i
+    for i in (nombre-2):
+        if (not estPremier(nombre+i+(i*i))):
+            return False
     return True
 
 #----------------Diviseur Propre-------------#
@@ -40,6 +42,8 @@ def divPropre(nombre):
     return liste
 
 #----------------Somme Diviseurs--------------#
+
+
 def somDiv(nombre):
     somDiviseur = 0
     for i in range(divPropre(nombre)-1):
