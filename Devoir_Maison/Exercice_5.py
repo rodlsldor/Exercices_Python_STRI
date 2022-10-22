@@ -6,7 +6,7 @@ def empiler(liste, num):
     return liste.append(num)
 
 
-def depiler(liste):
+def depiler(liste):  # enlève un élement de la pile
     if (liste.length == 0):
         return -1
     else:
