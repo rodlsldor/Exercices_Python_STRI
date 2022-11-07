@@ -34,4 +34,4 @@ def insertion_mot(fichier, mot, pos):
 
 
 insertion_mot(input("Chemin relatif du fichier ?\n"),
-              input("le mot fdp"), int(input("le chiffre fdp")))
+              input("Entrez le mot que vous souhaitez introduire."), int(input("Quelle ligne ?")))
